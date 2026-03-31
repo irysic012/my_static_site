@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+}
+
+
+.columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* три рівні колонки */
+    gap: 40px; /* збільшили відстань з 20px до 40px */
+    margin-top: 20px;
+}
+
+
+.column {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.column h2 {
+    margin-top: 0;
+    color: #2c3e50;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+
+.contacts {
+    margin-top: 30px;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+}
+.contacts h2 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+
+body.day {
+    background-color: white;
+    color: black;
+}
+
+body.night {
+    background-color: black;
+    color: whitesmoke;
+}
+
+header, footer, .column {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.night header,
+body.night footer,
+body.night .column {
+    background-color: dimgray;
+    color: whitesmoke;
+}

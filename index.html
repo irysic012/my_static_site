@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме — Пикало Ірина Іванівна</title>
+    <link rel="stylesheet" href="styles.css">
+    <button id="toggleTheme">Перемкнути режим</button>
+</head>
+<body>
+    <h1>Пикало Ірина Іванівна</h1>
+    <p>Студентка 2-го курсу спеціальності "Кібербезпека та захист інформації". 
+        Цікавлюся інформаційною безпекою, веб-технологіями та 
+сучасними методами захисту даних.</p>
+
+    <div class="columns">
+        <div class="column">
+            <h2>Освіта</h2>
+            <p>Навчаюся у вищому навчальному закладі, спеціальність "Кібербезпека та захист інформації".</p>
+        </div>
+
+        <div class="column">
+            <h2>Навички</h2>
+            <ul>
+                <li>Базові знання C#, Python, HTML та PHP</li> 
+        <li>Розуміння принципів інформаційної безпеки</li> 
+        <li>Вміння працювати з операційними системами Windows</li> 
+        <li>Навички командної роботи</li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h2>Проекти</h2>
+            <p>Навчальні лабораторні роботи з веб-розробки, програмування 
+скриптовими мовами, комп'ютерні мережі, бази даних.</p>
+<h2>Мови</h2> 
+    <ul> 
+        <li>Українська — рідна</li> 
+        <li>Англійська — рівень В2</li> 
+    </ul>
+        </div>
+    </div>
+    <div id="comments">
+    <h2>Коментарі</h2>
+</div>
+<div id="modal" style="display:none;">
+    <form action="https://formspree.io/f/xzdalvrd" method="POST">
+        <input type="text" name="name" placeholder="Ім'я" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="phone" placeholder="Телефон">
+        <textarea name="message" placeholder="Ваше повідомлення"></textarea>
+        <button type="submit">Відправити</button>
+    </form>
+</div>
+
+    <div class="contacts">
+        <h2>Контакти</h2>
+        <p>Email: iryna.pykalo@example.com</p>
+        <p>Телефон: +380XXXXXXXXX</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <p>© 2026 Пикало Ірина</p>
+    <p id="systemInfo"></p>
+</footer>
+</html>
